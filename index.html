@@ -20,18 +20,22 @@
 
   <body>
     <!--Шапка сайта-->
-    <header class="header-page">
+    <header class="container">
+      <!--Основная навигация сайта-->
       <nav>
-        <a href="./index.html" class="logo"
-          ><span class="logo-start">Web</span
-          ><span class="logo-end">Studio</span></a
-        >
+        <a href="./index.html" class="logo">
+          <span class="logo-start">Web</span
+          ><span class="logo-end">Studio</span>
+        </a>
         <ul class="nav-site list">
-          <li><a href="./index.html" class="nav-link current">Студия</a></li>
+          <li>
+            <a href="./index.html" class="nav-link current">Студия</a>
+          </li>
           <li><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
           <li><a href="./index.html" class="nav-link">Контакты</a></li>
         </ul>
       </nav>
+      <!--Список контактов-->
       <ul class="contact list">
         <li>
           <a href="mailto:info@devstudio.com" class="contact-link"
@@ -47,11 +51,13 @@
     <main>
       <!--Герой-->
       <section class="main-box">
-        <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="button" type="button">Заказать услугу</button>
+        <div class="container">
+          <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
+          <button class="button" type="button">Заказать услугу</button>
+        </div>
       </section>
       <!--Особенности-->
-      <section class="features">
+      <section class="container">
         <h2 hidden>Особенности</h2>
         <ul class="features-info list">
           <li>
@@ -85,13 +91,13 @@
         </ul>
       </section>
       <!--Основные направления-->
-      <section class="direct">
+      <section class="container">
         <h2 class="subtitle">Чем мы занимаемся</h2>
         <ul class="direct-info list">
           <li>
             <img
               src="./images/WorkofNout.jpg"
-              alt="Программст работает за своим рбочим столом"
+              alt="Программст работает за своим рабочим столом"
               width="370"
               height="294"
             />
@@ -115,7 +121,7 @@
         </ul>
       </section>
       <!--Команда-->
-      <section class="team">
+      <section class="team container">
         <h2 class="subtitle">Наша команда</h2>
         <ul class="team-info list">
           <li>
@@ -169,18 +175,22 @@
     </main>
     <!--Подвал сайта-->
     <footer class="footer-page">
-      <a href="./index.html" class="logo"
-        ><span class="logo-start">Web</span
-        ><span class="logo-end-footer">Studio</span></a
-      >
-      <address class="address">
-        г. Киев, пр-т Леси Украинки, 26 <br />
-        <a href="mailto:info@example.com" class="address-link"
-          >info@example.com</a
+      <div class="container">
+        <a href="./index.html" class="logo"
+          ><span class="logo-start">Web</span
+          ><span class="logo-end-footer">Studio</span></a
         >
-        <br />
-        <a href="tel:+380991111111" class="address-link">+38 099 111 11 11 </a>
-      </address>
+        <address class="address">
+          г. Киев, пр-т Леси Украинки, 26 <br />
+          <a href="mailto:info@example.com" class="address-link"
+            >info@example.com</a
+          >
+          <br />
+          <a href="tel:+380991111111" class="address-link"
+            >+38 099 111 11 11
+          </a>
+        </address>
+      </div>
     </footer>
   </body>
 </html>

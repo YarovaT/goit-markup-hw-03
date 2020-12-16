@@ -27,10 +27,21 @@ body {
   color: var(--primary-text-color);
 }
 
+.container {
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: auto;
+}
+
+/*Убирает маркеры*/
 .list {
   list-style: none;
 }
 
+/*Убирает подчеркивание*/
 .nav-link,
 .contact-link,
 .project-link,
@@ -40,9 +51,6 @@ body {
 }
 
 /* Шапка сайта */
-.header-page {
-  background-color: var(--primary-background-color);
-}
 
 /* Логотип сайта */
 .logo {
@@ -93,7 +101,6 @@ body {
 
 /*Герой*/
 .main-box {
-  height: 600px;
   background-color: var(--accent-background-color);
 }
 
@@ -106,6 +113,7 @@ body {
   text-align: center;
 }
 
+/*Включает заглавные буквы*/
 .main-title,
 .features-title {
   text-transform: uppercase;
@@ -123,6 +131,7 @@ body {
 
 /* Основные направления */
 .subtitle {
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -167,7 +176,6 @@ body {
 
 /* Подвал сайта */
 .footer-page {
-  height: 252px;
   background: var(--accent-background-color);
 }
 
@@ -185,13 +193,14 @@ body {
 /* Кнопки */
 .button,
 .btn {
-  font-family: inherit;
+  border-radius: 4px;
   font-size: var(--secondary-font-size);
+  cursor: pointer;
 }
 
 .button {
-  width: 200px;
-  height: 50px;
+  min-width: 200px;
+  padding: 10px 32px;
   font-weight: var(--secondary-font-weight);
   line-height: 1.87;
   letter-spacing: 0.06em;
@@ -200,6 +209,8 @@ body {
 }
 
 .btn {
+  min-width: 73px;
+  padding: 6px 22px;
   font-weight: var(--primary-font-weight);
   line-height: 1.62;
   letter-spacing: 0.03em;
@@ -211,5 +222,4 @@ body {
 .btn:focus {
   background: var(--accent-color);
   color: var(--primary-background-color);
-  cursor: pointer;
 }
