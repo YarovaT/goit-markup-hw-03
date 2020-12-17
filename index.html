@@ -20,32 +20,36 @@
 
   <body>
     <!--Шапка сайта-->
-    <header class="container">
+    <header>
       <!--Основная навигация сайта-->
-      <nav>
-        <a href="./index.html" class="logo">
-          <span class="logo-start">Web</span
-          ><span class="logo-end">Studio</span>
-        </a>
-        <ul class="nav-site list">
+      <div class="container margin-no">
+        <nav>
+          <a href="./index.html" class="logo">
+            <span class="logo-start">Web</span
+            ><span class="logo-end">Studio</span>
+          </a>
+          <ul class="nav-site list">
+            <li>
+              <a href="./index.html" class="nav-link current">Студия</a>
+            </li>
+            <li><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
+            <li><a href="./index.html" class="nav-link">Контакты</a></li>
+          </ul>
+        </nav>
+        <!--Список контактов-->
+        <ul class="contact list">
           <li>
-            <a href="./index.html" class="nav-link current">Студия</a>
+            <a href="mailto:info@devstudio.com" class="contact-link"
+              >info@devstudio.com</a
+            >
           </li>
-          <li><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
-          <li><a href="./index.html" class="nav-link">Контакты</a></li>
+          <li>
+            <a href="tel:+380961111111" class="contact-link"
+              >+38 096 111 11 11</a
+            >
+          </li>
         </ul>
-      </nav>
-      <!--Список контактов-->
-      <ul class="contact list">
-        <li>
-          <a href="mailto:info@devstudio.com" class="contact-link"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="contact-link">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <!--Главная страница контента-->
     <main>
@@ -57,7 +61,7 @@
         </div>
       </section>
       <!--Особенности-->
-      <section class="container">
+      <section class="features container">
         <h2 hidden>Особенности</h2>
         <ul class="features-info list">
           <li>
@@ -91,8 +95,8 @@
         </ul>
       </section>
       <!--Основные направления-->
-      <section class="container">
-        <h2 class="subtitle">Чем мы занимаемся</h2>
+      <section class="direct container">
+        <h2 class="subtitle margin-no">Чем мы занимаемся</h2>
         <ul class="direct-info list">
           <li>
             <img
@@ -121,61 +125,63 @@
         </ul>
       </section>
       <!--Команда-->
-      <section class="team container">
-        <h2 class="subtitle">Наша команда</h2>
-        <ul class="team-info list">
-          <li>
-            <img
-              src="./images/ProductDes.jpg"
-              alt="Фото мужчины дизайнера проекта"
-              width="270"
-              height="260"
-            />
-            <h3 class="team-name">Игорь Демьяненко</h3>
-            <p lang="en" class="team-text">Product Designer</p>
-          </li>
-        </ul>
-        <ul class="team-info list">
-          <li>
-            <img
-              src="./images/FrontenedDev.jpg"
-              alt="Фото женщины разработчика"
-              width="270"
-              height="260"
-            />
-            <h3 class="team-name">Ольга Репина</h3>
-            <p lang="en" class="team-text">Frontend Developer</p>
-          </li>
-        </ul>
-        <ul class="team-info list">
-          <li>
-            <img
-              src="./images/Marketing.jpg"
-              alt="Фото мужчины маркетолога"
-              width="270"
-              height="260"
-            />
-            <h3 class="team-name">Николай Тарасов</h3>
-            <p lang="en" class="team-text">Marketing</p>
-          </li>
-        </ul>
-        <ul class="team-info list">
-          <li>
-            <img
-              src="./images/Desiner.jpg"
-              alt="Фото мужчины дизайнера проекта"
-              width="270"
-              height="260"
-            />
-            <h3 class="team-name">Михаил Ермаков</h3>
-            <p lang="en" class="team-text">UI Designer</p>
-          </li>
-        </ul>
+      <section class="team">
+        <div class="container">
+          <h2 class="subtitle margin-no">Наша команда</h2>
+          <ul class="team-info list">
+            <li>
+              <img
+                src="./images/ProductDes.jpg"
+                alt="Фото мужчины дизайнера проекта"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-name">Игорь Демьяненко</h3>
+              <p lang="en" class="team-text">Product Designer</p>
+            </li>
+          </ul>
+          <ul class="team-info list">
+            <li>
+              <img
+                src="./images/FrontenedDev.jpg"
+                alt="Фото женщины разработчика"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-name">Ольга Репина</h3>
+              <p lang="en" class="team-text">Frontend Developer</p>
+            </li>
+          </ul>
+          <ul class="team-info list">
+            <li>
+              <img
+                src="./images/Marketing.jpg"
+                alt="Фото мужчины маркетолога"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-name">Николай Тарасов</h3>
+              <p lang="en" class="team-text">Marketing</p>
+            </li>
+          </ul>
+          <ul class="team-info list">
+            <li>
+              <img
+                src="./images/Desiner.jpg"
+                alt="Фото мужчины дизайнера проекта"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-name">Михаил Ермаков</h3>
+              <p lang="en" class="team-text">UI Designer</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!--Подвал сайта-->
     <footer class="footer-page">
-      <div class="container">
+      <div class="container margin-no">
         <a href="./index.html" class="logo"
           ><span class="logo-start">Web</span
           ><span class="logo-end-footer">Studio</span></a
