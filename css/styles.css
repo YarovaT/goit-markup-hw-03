@@ -92,6 +92,11 @@ header {
 }
 
 /* Навигация сайта*/
+.nav-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .nav-site,
 .contact {
   display: flex;
