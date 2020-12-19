@@ -58,37 +58,37 @@
     <main>
       <!--Герой-->
       <section class="main-box">
-        <div class="container">
+        <div class="container main-container">
           <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
           <button class="button" type="button">Заказать услугу</button>
         </div>
       </section>
       <!--Особенности-->
       <section class="features container">
-        <h2 hidden>Особенности</h2>
+        <h2 class="visually-hidden">Особенности</h2>
         <ul class="features-info list">
-          <li>
+          <li class="item">
             <h3 class="features-title">Внимание к деталям</h3>
             <p class="features-text">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
-          <li>
+          <li class="item">
             <h3 class="features-title">Пунктуальность</h3>
             <p class="features-text">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
-          <li>
+          <li class="item">
             <h3 class="features-title">Планирование</h3>
             <p class="features-text">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
-          <li>
+          <li class="item">
             <h3 class="features-title">Современные технологии</h3>
             <p class="features-text">
               Значимость этих проблем настолько очевидна, что реализация
@@ -99,9 +99,9 @@
       </section>
       <!--Основные направления-->
       <section class="direct container">
-        <h2 class="subtitle margin-no">Чем мы занимаемся</h2>
+        <h2 class="subtitle">Чем мы занимаемся</h2>
         <ul class="direct-info list">
-          <li>
+          <li class="item">
             <img
               src="./images/WorkofNout.jpg"
               alt="Программст работает за своим рабочим столом"
@@ -109,7 +109,7 @@
               height="294"
             />
           </li>
-          <li>
+          <li class="item">
             <img
               src="./images/WorkofTel.jpg"
               alt="Создатели работают в интерфейсе мобильного телефона"
@@ -117,7 +117,7 @@
               height="294"
             />
           </li>
-          <li>
+          <li class="item">
             <img
               src="./images/WorkofIpad.jpg"
               alt="Дизайнер работает с графиком выбора цвета на планшете"
@@ -129,54 +129,50 @@
       </section>
       <!--Команда-->
       <section class="team">
-        <div class="container">
-          <h2 class="subtitle margin-no">Наша команда</h2>
+        <h2 class="subtitle subtitle-team">Наша команда</h2>
+        <div class="container team-container">
           <ul class="team-info list">
-            <li>
+            <li class="team-item">
               <img
                 src="./images/ProductDes.jpg"
                 alt="Фото мужчины дизайнера проекта"
                 width="270"
-                height="260"
               />
-              <h3 class="team-name">Игорь Демьяненко</h3>
-              <p lang="en" class="team-text">Product Designer</p>
+              <h3 class="team-name list">Игорь Демьяненко</h3>
+              <p lang="en" class="team-text list">Product Designer</p>
             </li>
           </ul>
           <ul class="team-info list">
-            <li>
+            <li class="team-item">
               <img
                 src="./images/FrontenedDev.jpg"
                 alt="Фото женщины разработчика"
                 width="270"
-                height="260"
               />
-              <h3 class="team-name">Ольга Репина</h3>
-              <p lang="en" class="team-text">Frontend Developer</p>
+              <h3 class="team-name list">Ольга Репина</h3>
+              <p lang="en" class="team-text list">Frontend Developer</p>
             </li>
           </ul>
           <ul class="team-info list">
-            <li>
+            <li class="team-item">
               <img
                 src="./images/Marketing.jpg"
                 alt="Фото мужчины маркетолога"
                 width="270"
-                height="260"
               />
-              <h3 class="team-name">Николай Тарасов</h3>
-              <p lang="en" class="team-text">Marketing</p>
+              <h3 class="team-name list">Николай Тарасов</h3>
+              <p lang="en" class="team-text list">Marketing</p>
             </li>
           </ul>
           <ul class="team-info list">
-            <li>
+            <li class="team-item">
               <img
                 src="./images/Desiner.jpg"
                 alt="Фото мужчины дизайнера проекта"
                 width="270"
-                height="260"
               />
-              <h3 class="team-name">Михаил Ермаков</h3>
-              <p lang="en" class="team-text">UI Designer</p>
+              <h3 class="team-name list">Михаил Ермаков</h3>
+              <p lang="en" class="team-text list">UI Designer</p>
             </li>
           </ul>
         </div>
@@ -184,14 +180,15 @@
     </main>
     <!--Подвал сайта-->
     <footer class="footer-page">
-      <div class="container margin-no">
+      <div class="container">
         <a href="./index.html" class="logo"
           ><span class="logo-start">Web</span
           ><span class="logo-end-footer">Studio</span></a
         >
         <address class="address">
-          г. Киев, пр-т Леси Украинки, 26 <br />
-          <a href="mailto:info@example.com" class="address-link"
+          <span class="address-item">г. Киев, пр-т Леси Украинки, 26</span>
+          <br />
+          <a href="mailto:info@example.com" class="address-link address-item"
             >info@example.com</a
           >
           <br />

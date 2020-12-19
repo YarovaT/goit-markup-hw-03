@@ -27,14 +27,17 @@ body {
   color: var(--primary-text-color);
 }
 
+header {
+  border-bottom: 1px solid #ececec;
+}
+
+/*Основной контейнер*/
 .container {
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 94px;
-  outline: auto;
 }
 
 /*Убирает маркеры и отступы*/
@@ -52,9 +55,16 @@ body {
 .logo {
   text-decoration: none;
 }
+/*Скрывает заголовки*/
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
 
 /* Основная навигация сайта */
-
 .main-nav {
   display: flex;
   align-items: center;
@@ -81,22 +91,19 @@ body {
   color: var(--primary-background-color);
 }
 
-/* Основная навигация сайта*/
+/* Навигация сайта*/
 .nav-site,
 .contact {
   display: flex;
 }
 
-.nav-site .item + .item {
+.nav-site .item + .item,
+.contact .item + .item {
   margin-left: 50px;
 }
 
 .contact {
   margin-left: auto;
-}
-
-.contact .item + .item {
-  margin-left: 50px;
 }
 
 .nav-link,
@@ -128,13 +135,18 @@ body {
 
 /*Герой*/
 .main-box {
-  text-align: center;
+  margin-bottom: 94px;
+
   background-color: var(--accent-background-color);
 }
 
+.main-container {
+  padding: 200px 252px;
+  text-align: center;
+}
+
 .main-title {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  margin-bottom: 30px;
 
   font-weight: 900;
   font-size: 44px;
@@ -147,20 +159,32 @@ body {
 .main-title,
 .features-title {
   margin-top: 0;
-  margin-bottom: 0;
   text-transform: uppercase;
 }
 
 /* Особенности */
-.features-title {
-  font-size: var(--primary-font-size);
+.features {
+  margin-bottom: 94px;
+}
+
+.features-info {
+  display: flex;
+}
+
+.features-info .item + .item {
+  margin-left: 30px;
 }
 
 .features-text,
-.project-text,
-.project-title {
+.project-text {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.features-title {
+  margin-bottom: 10px;
+
+  font-size: var(--primary-font-size);
 }
 
 .features-text {
@@ -170,9 +194,18 @@ body {
 
 /* Основные направления */
 .subtitle {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+}
+
+.direct-info {
+  display: flex;
+  margin-bottom: 94px;
+  justify-content: space-between;
 }
 
 /* Команда */
@@ -180,15 +213,40 @@ body {
   background-color: var(--secondary-background-color);
 }
 
+.team-container {
+  display: flex;
+}
+
+.subtitle-team {
+  padding-top: 94px;
+}
+
+.team-info {
+  display: flex;
+  margin-right: 30px;
+  margin-bottom: 141px;
+  background-color: var(--primary-background-color);
+  border: transparent;
+}
+
 .team-name,
 .team-text {
-  margin-top: 0;
-  margin-bottom: 0;
+  text-align: center;
+}
+
+.team-info:nth-child(4n) {
+  margin-right: 0;
+}
+
+.team-name,
+.team-text {
   font-size: var(--primary-font-size);
   line-height: 1.19;
 }
 
 .team-name {
+  padding-top: 20px;
+  padding-bottom: 10px;
   font-weight: var(--primary-font-weight);
 }
 
@@ -197,11 +255,53 @@ body {
 }
 
 /*Главная страница Портфолио*/
+.btn-filter {
+  display: flex;
+  margin-top: 94px;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+/*убрать марджин*/
+
+.item-btn .btn {
+  margin-left: 8px;
+}
+
+.project-item img {
+  margin-bottom: 10px;
+}
+
+.project {
+  margin-bottom: 94px;
+}
+
 .project-info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc((100%-58px) / 3);
+
   background-color: var(--primary-background-color);
 }
 
+.project-item {
+  margin-right: 29px;
+  margin-bottom: 29px;
+  border: 1px solid #eeeeee;
+}
+
+.project-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.project-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
 .project-title {
+  margin-top: 20px;
+  margin-bottom: 4px;
+
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -214,6 +314,10 @@ body {
   color: var(--secondary-text-color);
 }
 
+.project-link {
+  background-color: blue;
+}
+
 /* Подвал сайта */
 .footer-page {
   padding-top: 60px;
@@ -222,10 +326,16 @@ body {
 }
 
 .address {
+  padding-top: 20px;
+
   font-size: var(--primary-font-size);
   line-height: 1.71;
   font-style: normal;
   color: var(--primary-background-color);
+}
+
+.address-item {
+  padding-bottom: 9px;
 }
 
 .address-link {
@@ -244,6 +354,7 @@ body {
 .button {
   min-width: 200px;
   padding: 10px 32px;
+
   font-weight: var(--secondary-font-weight);
   line-height: 1.87;
   letter-spacing: 0.06em;
