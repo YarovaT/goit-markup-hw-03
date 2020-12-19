@@ -319,10 +319,6 @@ header {
   color: var(--secondary-text-color);
 }
 
-.project-link {
-  background-color: blue;
-}
-
 /* Подвал сайта */
 .footer-page {
   padding-top: 60px;
