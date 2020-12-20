@@ -151,6 +151,8 @@ header {
 }
 
 .main-title {
+  padding-right: 252px;
+  padding-left: 252px;
   margin-bottom: 30px;
 
   font-weight: 900;
