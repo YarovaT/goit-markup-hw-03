@@ -93,12 +93,13 @@ header {
 
 /* Навигация сайта*/
 .nav-container {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .nav-site,
-.contact {
+.contact,
+.features-info {
   display: flex;
 }
 
@@ -140,13 +141,12 @@ header {
 
 /*Герой*/
 .main-box {
-  margin-bottom: 94px;
-
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--accent-background-color);
 }
 
 .main-container {
-  padding: 200px 252px;
   text-align: center;
 }
 
@@ -168,12 +168,11 @@ header {
 }
 
 /* Особенности */
-.features {
-  margin-bottom: 94px;
-}
-
-.features-info {
-  display: flex;
+.features,
+.team,
+.project {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .features-info .item + .item {
@@ -207,9 +206,17 @@ header {
   text-align: center;
 }
 
+.card-image {
+  display: block;
+  margin: 0;
+}
+
+.direct {
+  padding-bottom: 94px;
+}
+
 .direct-info {
   display: flex;
-  margin-bottom: 94px;
   justify-content: space-between;
 }
 
@@ -222,16 +229,10 @@ header {
   display: flex;
 }
 
-.subtitle-team {
-  padding-top: 94px;
-}
-
 .team-info {
   display: flex;
   margin-right: 30px;
-  margin-bottom: 141px;
   background-color: var(--primary-background-color);
-  border: transparent;
 }
 
 .team-name,
@@ -250,20 +251,22 @@ header {
 }
 
 .team-name {
-  padding-top: 20px;
+  padding-top: 30px;
   padding-bottom: 10px;
   font-weight: var(--primary-font-weight);
 }
 
 .team-text {
+  padding-bottom: 30px;
+
   color: var(--secondary-text-color);
 }
 
 /*Главная страница Портфолио*/
 .btn-filter {
   display: flex;
-  margin-top: 94px;
-  margin-bottom: 50px;
+  padding-bottom: 16px;
+  margin-bottom: 34px;
   justify-content: center;
 }
 
@@ -273,18 +276,10 @@ header {
   margin-left: 8px;
 }
 
-.project-item img {
-  margin-bottom: 10px;
-}
-
-.project {
-  margin-bottom: 94px;
-}
-
 .project-info {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: calc((100%-58px) / 3);
+  flex-basis: calc((100%-60px) / 3);
 
   background-color: var(--primary-background-color);
 }
@@ -292,11 +287,14 @@ header {
 .project-item {
   margin-right: 29px;
   margin-bottom: 29px;
-  border: 1px solid #eeeeee;
 }
 
 .project-item:nth-child(3n) {
   margin-right: 0;
+}
+.project-list {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
 
 .project-item:nth-last-child(-n + 3) {
@@ -304,9 +302,6 @@ header {
 }
 
 .project-title {
-  margin-top: 20px;
-  margin-bottom: 4px;
-
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
